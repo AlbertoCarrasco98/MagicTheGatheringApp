@@ -18,13 +18,10 @@ class APIMagic {
             do {
                 let magics = try JSONDecoder().decode(APIResponse.self, from: dataMagics)
                 
-                
                 let spanishCard = magics.cards.compactMap { card in
                     card.foreignNames?.first(where: {$0.language == "Spanish"})
                 }
-                let spanishCardNotOptional = spanishCard
-                completion(spanishCardNotOptional)
-                
+                completion(spanishCard)
             } catch {
                 print(error, "error al decodificar")
                 //            TODO: Handler Error
