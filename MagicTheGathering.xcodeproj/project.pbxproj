@@ -19,6 +19,7 @@
 		98A0BA8E2D314369001D18A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0BA802D314369001D18A9 /* AppDelegate.swift */; };
 		98A0BA8F2D314369001D18A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0BA872D314369001D18A9 /* SceneDelegate.swift */; };
 		98A0BA902D314369001D18A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0BA882D314369001D18A9 /* MainViewController.swift */; };
+		98D2E1552D3E4870000E22FE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D2E1542D3E4870000E22FE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		98A0BA852D314369001D18A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98A0BA872D314369001D18A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		98A0BA882D314369001D18A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		98D2E1542D3E4870000E22FE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				98A0BA882D314369001D18A9 /* MainViewController.swift */,
+				98D2E1542D3E4870000E22FE /* DetailViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				983761972D37B3B4006EA016 /* DatabaseManagerProtocol.swift in Sources */,
 				9837619B2D37B56E006EA016 /* APIMagic.swift in Sources */,
 				983761952D37B3A5006EA016 /* DatabaseManager.swift in Sources */,
+				98D2E1552D3E4870000E22FE /* DetailViewController.swift in Sources */,
 				983761932D37B37D006EA016 /* ViewModel.swift in Sources */,
 				98A0BA902D314369001D18A9 /* MainViewController.swift in Sources */,
 			);

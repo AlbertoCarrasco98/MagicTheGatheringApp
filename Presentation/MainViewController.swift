@@ -27,7 +27,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         loadMagics()
-        
     }
     
     private func loadMagics() {
@@ -53,8 +52,6 @@ class MainViewController: UIViewController {
             view.bottomAnchor.constraint(equalTo: tableView.bottomAnchor)
         ])
     }
-
-
 }
 
 extension MainViewController: UITableViewDataSource {
@@ -71,5 +68,9 @@ extension MainViewController: UITableViewDataSource {
 }
 
 extension MainViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.present(Assembler.assemblerDetailVC(card: viewModel.magics[indexPath.row],
+                                                                  viewModel: viewModel), animated: true)
+    }
 }

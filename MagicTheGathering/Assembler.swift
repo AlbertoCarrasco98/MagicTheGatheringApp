@@ -8,4 +8,10 @@ class Assembler {
         let mainVC = MainViewController(viewModel: viewModel)
         return mainVC
     }
+    
+    static func assemblerDetailVC(card: SpanishCard, viewModel: ViewModel) -> UIViewController {
+        let detailVC = DetailViewController(card: card,
+                                            viewModel: viewModel)
+        return detailVC
+    }
 }
